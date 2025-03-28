@@ -1,0 +1,48 @@
+{
+  "name": "ai-content-hub",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next export",
+    "deploy": "npm run build && firebase deploy",
+    "generate-content": "ts-node src/scripts/initializeContent.ts",
+    "init-content": "ts-node src/scripts/initContent.ts",
+    "init": "node init.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.0",
+    "@supabase/supabase-js": "^2.39.3",
+    "@types/node": "^20.17.28",
+    "@types/nodemailer": "^6.4.17",
+    "@types/react": "^18.2.61",
+    "@types/react-dom": "^18.2.19",
+    "airtable": "^0.12.2",
+    "axios": "^1.8.4",
+    "dotenv": "^16.4.7",
+    "firebase": "^10.14.1",
+    "firebase-admin": "^13.2.0",
+    "firebase-functions": "^6.3.2",
+    "framer-motion": "^12.6.2",
+    "next": "14.1.0",
+    "nodemailer": "^6.10.0",
+    "openai": "^4.90.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-intersection-observer": "^9.16.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.1.0",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.0"
+  },
+  "type": "module"
+}
